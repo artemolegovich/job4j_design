@@ -77,7 +77,7 @@ public class SimpleArrayList<T> implements List<T> {
         };
         return iterator;
     }
-    private void containerResize () {
+    private void containerResize() {
         container = container.length == 0
                 ? Arrays.copyOf(container, 10)
                 : Arrays.copyOf(container, size * 2);
